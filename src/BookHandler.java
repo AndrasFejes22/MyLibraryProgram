@@ -1,3 +1,4 @@
+import java.awt.print.Book;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -194,5 +195,10 @@ public class BookHandler {
         return booklist;
 
 
+    }
+
+    public static void deleteBook(List<Books> booklist, Books book){
+        booklist.remove(book);
+        System.out.println(book + " deleted.");
     }
 }

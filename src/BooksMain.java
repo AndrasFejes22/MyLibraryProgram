@@ -1,3 +1,4 @@
+import java.awt.print.Book;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -164,8 +165,13 @@ public class BooksMain {
         System.out.println();
         //System.out.println("Booklist tartalmazza a book1-et: "+booklist_B.contains(book1));// ilyen is van nyilván
         System.out.println();
+        System.out.println("delete method");
+        BookHandler.deleteBook(booklist_A, book12);
+        System.out.println();
         //printing booklist:
+
         System.out.println("printing booklist:");
+
         BookHandler.printingBooklist(booklist_A);
         System.out.println();
         System.out.println("Könyvek száma/számláló/: " + Books.szamlalo);
