@@ -6,9 +6,9 @@ public class Books {
     private int pages;
     private int edition;
     private boolean available = true;
-    public static int szamlalo = 0;
+    public static int counter = 0;
     int sorszam = 0;
-    public static int counter;
+
 
     public Books(String title, String author, int pages, int edition, boolean available) {
         super();
@@ -17,8 +17,8 @@ public class Books {
         this.pages = pages;
         this.edition = edition;
         this.available = available;
-        szamlalo++;
-        sorszam = szamlalo;
+        counter++;
+        sorszam = counter;
 
 
     }

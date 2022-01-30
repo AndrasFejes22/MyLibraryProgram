@@ -1,6 +1,4 @@
-import java.awt.print.Book;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class BooksMain {
 
@@ -174,9 +172,8 @@ public class BooksMain {
 
         BookHandler.printingBooklist(booklist_A);
         System.out.println();
-        System.out.println("Könyvek száma/számláló/: " + Books.szamlalo);
-        //System.out.println("Könyvek száma/sorszám/: " + Books.sorszam);
-        System.out.println("Könyvek száma/counter/: " + Books.counter);
+        System.out.println("Number of books: " + Books.counter);
+
 
 
     }
