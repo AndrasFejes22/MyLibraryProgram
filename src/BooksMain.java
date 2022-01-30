@@ -38,23 +38,19 @@ public class BooksMain {
 
 
 
-        // System.out.println("Névsor: " + readersRoster);
-
-
-
         System.out.println("Reader's list sorted by year:");
         System.out.println();
         ReadersHandler.sortedByYear(readersList);
 
         System.out.println();
 
-        System.out.println("Reader's list sorted by ID");//átrakni
+        System.out.println("Reader's list sorted by ID");
         System.out.println();
         ReadersHandler.sortedByID(readersList);
 
         System.out.println();
 
-        System.out.println("Reader'slist sorted by Name:");//átrakni
+        System.out.println("Reader'slist sorted by Name:");
         System.out.println();
         ReadersHandler.sortedByName(readersList);
 
@@ -161,8 +157,7 @@ public class BooksMain {
         System.out.println();
         BookHandler.foundBooks2(1987, booklist_A);
         System.out.println();
-        //System.out.println("Booklist tartalmazza a book1-et: "+booklist_B.contains(book1));// ilyen is van nyilván
-        System.out.println();
+        
         System.out.println("delete method");
         BookHandler.deleteBook(booklist_A, book12);
         System.out.println();
