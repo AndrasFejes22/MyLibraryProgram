@@ -48,11 +48,11 @@ public class Readers {
         for (int i = 0; i < name.length(); i++) {
             if (!(Character.isLetter(name.charAt(i))) && !(Character.isWhitespace(name.charAt(i)))) {
                 cnt++;
-                System.out.println(name.charAt(i));
+                //System.out.println(name.charAt(i));
                 chr = name.charAt(i);
             }
         }
-        System.out.println("cnt:" + cnt);
+        //System.out.println("cnt:" + cnt);
         if(cnt == 0){
             this.name = name;
             System.out.println("The name has been changed to " + name);
@@ -91,7 +91,13 @@ public class Readers {
 
     @Override
     public String toString() {
-        return "Readers [name=" + name + ", id=" + id + ", address=" + address + ", age=" + age + ", lateFee=" + lateFee +", loanedBooks=" + loanedBooks + "]";
+        return "Reader: " +'\n' +
+                "name = " + name + ", " +'\n'+
+                "id = " + id + ", " +'\n'+
+                "address = " + address + ", " +'\n'+
+                "age = " + age + ", " +'\n'+
+                "lateFee = " + lateFee +", " +'\n'+
+                "loanedBooks = " + loanedBooks ;
     }
     /*
     @Override
