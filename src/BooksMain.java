@@ -20,6 +20,8 @@ public class BooksMain {
         Readers reader12 = new Readers("John Doe", "klo123", "Szarvas", 52);
 
         reader12.setName("Gips2z Jakab");
+        reader12.setLateFee(15);
+
         System.out.println(reader12);
 
 
@@ -76,6 +78,12 @@ public class BooksMain {
         Books book10 = new Books("The Paper Palace", "Laura Dave" , 250, 1980, true);
         Books book11= new Books("Gas turbines", "Fülöp Zoltán", 200, 1978, true);
         Books book12= new Books("gasurbines 2", "Fülöp Zoltán", 245, 1986, true);
+
+        System.out.println();
+        System.out.println("loan method:");
+        BookHandler.loan(reader12, book1);
+        BookHandler.loan(reader12, book5);
+        System.out.println(reader12);
 
         System.out.println();
         System.out.println("loan method:");

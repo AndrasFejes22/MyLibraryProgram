@@ -7,12 +7,18 @@ public class BookHandler {
     // Books actualbook;
 
     public static void loan(Readers reader, Books actualBook) {
+        if(reader.getLateFee() >= 120){
+            System.out.println("Loan is forbidden because of late fee");
+        }else
         if (actualBook.getAvailable() == false) {
             System.out.println("The book '" + actualBook.getTitle() + "' has already loaned!");
+
         }
-        if (actualBook.getAvailable() == true) {
+         else if (actualBook.getAvailable() == true) {
             actualBook.setAvailable(false);
+            reader.setLoanedBooks(reader.getLoanedBooks()+1);
             System.out.println("The book '" + actualBook.getTitle() + "' loaned by " + reader.getName() +".");
+
         }
     }
 

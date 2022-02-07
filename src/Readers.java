@@ -6,6 +6,9 @@ public class Readers {
     private String id;//alphanumerical string
     private String address;
     private int age;
+    private int lateFee;
+    private int loanedBooks;
+
 
     public Readers(String name, String id, String address, int age) {
         super();
@@ -13,6 +16,8 @@ public class Readers {
         this.id = id;
         this.address = address;
         this.age = age;
+        lateFee = 0;
+        loanedBooks = 0;
     }
 
     public Readers(String name) {
@@ -68,9 +73,25 @@ public class Readers {
         this.age = age;
     }
 
+    public int getLateFee() {
+        return lateFee;
+    }
+
+    public void setLateFee(int lateFee) {
+        this.lateFee = lateFee;
+    }
+
+    public int getLoanedBooks() {
+        return loanedBooks;
+    }
+
+    public void setLoanedBooks(int loanedBooks) {
+        this.loanedBooks = loanedBooks;
+    }
+
     @Override
     public String toString() {
-        return "Readers [name=" + name + ", id=" + id + ", address=" + address + ", age=" + age + "]";
+        return "Readers [name=" + name + ", id=" + id + ", address=" + address + ", age=" + age + ", lateFee=" + lateFee +", loanedBooks=" + loanedBooks + "]";
     }
     /*
     @Override
