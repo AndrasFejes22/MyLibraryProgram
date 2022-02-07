@@ -38,7 +38,22 @@ public class Readers {
     }
 
     public void setName(String name) {
-        this.name = name;
+        char chr = 0;
+        int cnt = 0;
+        for (int i = 0; i < name.length(); i++) {
+            if (!(Character.isLetter(name.charAt(i))) && !(Character.isWhitespace(name.charAt(i)))) {//or space //|| !(Character.isSpaceChar(name.charAt(i)))
+                cnt++;
+                System.out.println(name.charAt(i));
+                chr = name.charAt(i);
+            }
+        }
+        System.out.println("cnt:" + cnt);
+        if(cnt == 0){
+            this.name = name;
+            System.out.println("The name has been changed to " + name);
+        }else {
+            System.out.println("Incorrect name! There is a '"+ chr + "' in the name. The name has not been changed!");
+        }
     }
 
     public void setId(String id) {

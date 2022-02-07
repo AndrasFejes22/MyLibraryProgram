@@ -19,6 +19,10 @@ public class BooksMain {
         Readers reader10 = new Readers("Nagy Ágnes", "ABC123", "Pécs", 56);
         Readers reader12 = new Readers("John Doe", "klo123", "Szarvas", 52);
 
+        reader12.setName("Gips2z Jakab");
+        System.out.println(reader12);
+
+
         //initialize list of readers:
 
         List<Readers> readersList = new ArrayList<>();
