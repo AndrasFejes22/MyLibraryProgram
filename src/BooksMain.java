@@ -21,6 +21,7 @@ public class BooksMain {
 
         reader12.setName("Gips2z Jakab");
         reader12.setLateFee(15);
+        reader12.setLoanedBooks(6);
 
         System.out.println(reader12);
 
