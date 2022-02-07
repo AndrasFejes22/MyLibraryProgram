@@ -41,7 +41,7 @@ public class Readers {
         char chr = 0;
         int cnt = 0;
         for (int i = 0; i < name.length(); i++) {
-            if (!(Character.isLetter(name.charAt(i))) && !(Character.isWhitespace(name.charAt(i)))) {//or space //|| !(Character.isSpaceChar(name.charAt(i)))
+            if (!(Character.isLetter(name.charAt(i))) && !(Character.isWhitespace(name.charAt(i)))) {
                 cnt++;
                 System.out.println(name.charAt(i));
                 chr = name.charAt(i);

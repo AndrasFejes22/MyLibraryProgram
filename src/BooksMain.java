@@ -7,7 +7,7 @@ public class BooksMain {
         //initialize readers:
 
         Readers reader1 = new Readers("Kiss Jenő", "VMX4AH", "Aba", 89);
-        Readers reader11 = new Readers("Kiss Jenő", "VMX4AH", "Aba", 70);
+        Readers reader11 = new Readers("Kiss Jenő", "VMX4AG", "Aba", 70);
         Readers reader2 = new Readers("Kiss Julía", "ert56z", "Budapest", 56);
         Readers reader3 = new Readers("Varga Jenő", "Lk89oo", "Szeged", 44);
         Readers reader4 = new Readers("Kovács Vali", "KL9IOP", "Miskolc", 22);
