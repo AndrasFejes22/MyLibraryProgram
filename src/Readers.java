@@ -22,12 +22,6 @@ public class Readers {
 
     public Readers(){}
 
-    public Readers(String name) {
-        super();
-        this.name = name;
-
-    }
-
     public String getName() {
         return name;
     }
@@ -103,7 +97,8 @@ public class Readers {
         }
     }
 
-    public void setAge(int age) {//
+    //cannot validate numbers starting with zero, e.g. 034
+    public void setAge(int age) {
 
         System.out.println("stringValue: "+String.valueOf(age));
         String pattern ="^[1-9][0-9]*$";
