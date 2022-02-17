@@ -19,12 +19,16 @@ public class BooksMain {
         Readers reader10 = new Readers("Nagy Ágnes", "ABC123", "Pécs", 56);
         Readers reader12 = new Readers("John Doe", "klo123", "Szarvas", 52);
 
-        reader12.setName("Gips2z Jakab");
-        reader12.setLateFee(15);
-        reader12.setLoanedBooks(6);
+        //reader12.setName("Gipsz Jakab Gezaa"); //5+1+5+1+5 = 17
+        reader12.setName("Kiss Jani"); //5+1+5+1+5 = 17
+        reader12.setId("-1");
+
+        reader12.setAge(031);
+        reader12.setCity("Alma2");
+        reader12.setLoanedBooks("01");
+        reader12.setLateFee("-110");
 
         System.out.println(reader12);
-
 
         //initialize list of readers:
 

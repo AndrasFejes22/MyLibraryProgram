@@ -41,7 +41,7 @@ public class Books {
     }
 
     public int getEdition() {
-        return new Integer(edition);
+        return edition;
     }
 
     public boolean getAvailable() {
