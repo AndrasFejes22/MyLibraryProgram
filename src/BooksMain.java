@@ -25,8 +25,8 @@ public class BooksMain {
 
         reader12.setAge(031);
         reader12.setCity("Alma2");
-        reader12.setLoanedBooks("01");
-        reader12.setLateFee("-110");
+        reader12.setLoanedBooks(4);
+        reader12.setLateFee(23);
 
         System.out.println(reader12);
 

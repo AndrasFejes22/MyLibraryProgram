@@ -6,8 +6,8 @@ public class Readers {
     private String id;//alphanumerical string
     private String city;
     private int age;
-    private String lateFee;
-    private String loanedBooks;
+    private int lateFee;
+    private int loanedBooks;
 
 
     public Readers(String name, String id, String city, int age) {
@@ -16,8 +16,8 @@ public class Readers {
         this.id = id;
         this.city = city;
         this.age = age;
-        lateFee = "0";
-        loanedBooks = "0";
+        lateFee = 0;
+        loanedBooks = 0;
     }
 
     public Readers(){}
@@ -77,7 +77,7 @@ public class Readers {
     }
 
     public void setId(String id) {
-        String pattern ="^[a-zA-Z0-9]{6}$"; //pl VMX4AH :)
+        String pattern ="^[a-zA-Z0-9]{6}$"; //for example VMX4AH
         if(Pattern.matches(pattern, id)){
             this.id = id;
             System.out.println("The ID has been changed to " + id);
@@ -110,11 +110,11 @@ public class Readers {
         }
     }
 
-    public String getLateFee() {
+    public int getLateFee() {
         return lateFee;
     }
 
-    public void setLateFee(String lateFee) {//this.lateFee = lateFee;
+    public void setLateFee(int lateFee) {
         String pattern ="^[1-9][0-9]*$";
         if(Pattern.matches(pattern, String.valueOf(lateFee))){
             this.lateFee = lateFee;
@@ -124,11 +124,11 @@ public class Readers {
         }
     }
 
-    public String getLoanedBooks() {
+    public int getLoanedBooks() {
         return loanedBooks;
     }
 
-    public void setLoanedBooks(String loanedBooks) {//this.loanedBooks = loanedBooks;
+    public void setLoanedBooks(int loanedBooks) {//this.loanedBooks = loanedBooks;
         String pattern ="^[0-9]{1}$";
         if(Pattern.matches(pattern, String.valueOf(loanedBooks))){
             this.loanedBooks = loanedBooks;
