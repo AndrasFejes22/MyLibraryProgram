@@ -7,7 +7,7 @@ public class BookHandler {
     // Books actualbook;
 
     public static void loan(Readers reader, Books actualBook) {
-        //Convert String to integer:
+        
         if (reader.getLateFee()>= 120 ||reader.getLoanedBooks() >=5){
             System.out.println("Loan is forbidden because of late fee or loan limit");
         }else
